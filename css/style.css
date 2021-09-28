@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(237, 245, 253);
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 5rem;
+    animation: slideDown 0.3s linear;
+}
+
+.text {
+     font-size: 1.25rem;
+     margin-top: 0.5rem;
+}
+
+.btn {
+    text-decoration: none;
+    border: 5px solid rgb(130, 173, 216);
+    border-radius: 15px;
+    padding: 15px;
+    color: #fff;
+    background-color: rgb(130,173, 216);
+    animation: slideUp 0.3s linear;   
+
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translate(-50px, 30px);
+    }
+
+    to {
+        transform: translate(0);
+    }
+}
